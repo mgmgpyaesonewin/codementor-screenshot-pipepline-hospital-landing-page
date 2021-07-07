@@ -1,7 +1,7 @@
 <template>
   <div class="p-4">
-    <h3 class="text-lg font-medium leading-6 text-gray-900 my-4">Get an Appointment</h3>
-      <div class="md:shadow-md md:rounded-md md:px-6 md:py-4">  
+    <h3 class="text-lg font-medium leading-6 text-gray-900 my-4 md:text-center">Get an Appointment</h3>
+      <div class="md:shadow-md md:rounded-md md:px-6 md:py-4 lg:mx-32 lg:mt-8">  
         <form action="#" method="POST">
           <div class="grid grid-cols-1 gap-5">
             <div>
@@ -73,7 +73,7 @@
               </select>
             </div>
             <div>
-              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:w-full">
                 Submit Request
               </button>
             </div>
