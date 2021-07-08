@@ -21,16 +21,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           start: npm run dev
           browser: chrome
           headless: true
-      
       - uses: actions/upload-artifact@v1
-        if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
