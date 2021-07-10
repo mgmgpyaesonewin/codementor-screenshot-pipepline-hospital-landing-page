@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <h3 class="text-lg font-medium leading-6 text-gray-900 my-4 md:text-center">Get an Appointment Now</h3>
+    <h3 class="text-lg font-medium leading-6 text-gray-900 my-4 md:text-center">Get an Appointment</h3>
       <div class="md:shadow-md md:rounded-md md:px-6 md:py-4 lg:mx-32 lg:mt-8">  
         <form action="#" method="POST">
           <div class="grid grid-cols-1 gap-5">
