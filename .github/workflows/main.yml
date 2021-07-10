@@ -27,7 +27,10 @@ jobs:
           start: npm run dev
           browser: chrome
           headless: true
-      - uses: actions/upload-artifact@v1
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
+      - name: Upload to S3
+        run: |
+          aws s3 sync ./cypress/screenshots/home-page/homepage.spec.js/homepage.png s3://hospital-landing-page-testing-artifacts
+        env:
+          AWS_ACCESS_KEY_ID: 'AKIAZ672R2PNSHLYTT7J'
+          AWS_SECRET_ACCESS_KEY: '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'
+          AWS_DEFAULT_REGION: 'ap-southeast-1'
